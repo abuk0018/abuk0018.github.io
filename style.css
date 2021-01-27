@@ -1,0 +1,162 @@
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*------------------- Starting to redesign the original page ------------------*/
+/*--- use the high specificity (1,1,0)to change the width,adding darkkaki background color, black color 5px solid border to the nav banner ---*/
+ body #nav {
+  width: 1140px;
+  background-color: darkkhaki;
+  border: 5px solid black;
+}
+/*---use the high specificity (1,1,0) to change the font family , black color and margin to the nav-link in the page ---*/
+ #nav .nav-link{
+  font-family: fantasy;
+  color: teal;
+  margin: 50px;
+}
+/*---use the high specificity(1,0,1) to change background to teal and change the font family to the main in section home ---*/
+main #home {
+  background-color: teal;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*--- change the background color to the h2 to be darkkhaki color and add margin, margin-top to the h2 to center it on the page  ---*/
+section h2 {
+  background-color: darkkhaki;
+  margin: 80px;
+  margin-top: -30px;
+}
+/*--- change the background color to h1 to be darkkhaki color and add margin-top to the h1 to center it on the page ---*/
+section h1 {
+  background-color: darkkhaki ;
+  margin-top: -30px;
+}
+/*--- using high specificity(1,0,1) to change the background colot to section about to be a darkred color and margin-bottom -100px to optimized the section ---*/
+main #about{
+  background-color: darkred;
+  margin-bottom: -100px;
+}
+/*--- using the high specificity(0,1,1) to add the margin between two paragraphs and change the font-style---*/
+#about p{
+  font-style: oblique;
+  color: darkkhaki;
+  font-weight: bold;
+  margin: 60px;
+}
+/*--- Adding black color to the h2 to be suitable to the page ----*/
+.section-title{
+  color:black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*--- using high specificity(1,0,1) to the section-title to change the font family---*/
+#contact .section-title{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*--- change the font-family,black color to be bold and margin to all the paragraphs in the page ---*/
+section p{
+  margin: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+/*--- using high specificity(0,1,1) to change the height of the image to put it inline the section ---*/
+main .about-image{
+  height: 343.5px;
+}
+/*---using high specificity(1,0,0) to change the background color to a teal color to the contact section ---*/
+#contact{
+  background-color: teal;
+}
+/*--- using high specificity(1,0,1) to change the margin of the paragraph and add text-align to center it---*/
+#contact p{
+  margin: 50px;
+  text-align: center;
+}
+/*---using high specificity(1,1,0) to change the background color of the table form to be darkkhaki ---*/
+#contact .contact-form{
+  background-color: darkkhaki;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 40px;
+}
+/*--- using high specificity(1,1,0) to increase the padding-right to the form ---*/
+#contact .contact-form-section {
+  padding-right: 40px;
+}
+/*--- using high specificity(0,0,2) to chang the font-size of the lable---*/
+main label{
+  font-size: 20px;
+}
+/*--- using the high specificity(0,1,0) to the form input to increase the padding---*/
+.contact-form-input{
+  padding: 20px;
+}
+/*--- center the footer in the page, add margin and margin-top ---*/
+body footer {
+  margin: -160px;
+  margin-top: -70px;
+  text-align: center ;
+}
+/*--- Adding 5px solid black to the border of the main to be more beautiful ---*/
+main {
+  border: 5px solid black;
+}
+/*--- adding media queries to optimized the page for mobile screen size, therefore i used max-width 480px---*/
+/*--- using high specificity(1,1,1) to change the width of the contact form---*/
+@media screen and (max-width:480px){
+main #contact .contact-form {
+ width: 50%;
+}
+/*--- using high specificity(1,1,0) to change the width and margin-left of the about-image---*/ 
+#about .about-image{
+ width: 110%;
+ margin-left: 3rem;
+}
+/*--- using high specificity(1,1,1) to change the width of the nav bar to suite the page---*/ 
+body #nav.nav{
+  width: 375px;
+}
+/*---using high specificity(1,1,1) to change the margin among nav-links,color,font-family and font-weight---*/
+body #nav .nav-link{
+  margin: 20px;
+  color: darkred;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+}
+}
+
+
+
+
+
+ 
+ 
