@@ -1,0 +1,473 @@
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*--- Starting to layout the landing page---*/
+/*--- Adding max-width, height, margin,padding and font-family to the html and body elements---*/
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #f7f7ff;
+}
+
+/*--- Using grid to the main section in the landing page to style it ---*/
+.main {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	height: 100%;
+	padding: 1rem;
+	background-color: #f7f7ff;
+	background-image: url(images/bg-image/scooter.svg);
+	background-repeat: no-repeat;
+	background-position: center 40%;
+	background-size: 50%;
+}
+
+/*--- Using flex to the header to be flexable ---*/
+.header {
+	display: flex;
+	justify-content: flex-start;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/*--- Using flex to the dash logo to start the page ----*/
+.dlogo {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	width: 120px;
+	padding-left: 40px;
+}
+
+/*--- Using flex to the h1 in the main page ----*/
+.boss {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 70px;
+	font-weight: bold;
+	margin: 30px;
+}
+
+/*----Using flex to the paragraph in the main page ------*/
+.parag {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	margin: 30px;
+	margin-top: 100px;
+	font-size: 20px;
+}
+
+/*---  Using flex to the section form in the main page ----*/
+.section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	border: 1px solid grey;
+	border-radius: 20px;
+	background-color: white;
+	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+	padding: 15px;
+	width: 350px;
+	padding-top: 20px;
+	margin: 70px;
+}
+
+/*--- Using grid-column to the section form to select at the end of the grid ---*/
+.section {
+	grid-column: 4/6;
+}
+
+/*--- Using flex to the apply-now form to be flexable ---*/
+.apply-now {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+/*--- Using font-weight: normal to the font on enter your info -----*/
+.enter {
+	font-weight: normal;
+}
+
+/*--- Using display block to the input to style it---*/
+input {
+	display: block;
+	width: 90%;
+	padding: 12px;
+	border-radius: 10px;
+	margin: 10px;
+	background-color: whitesmoke;
+	border-style: none;
+}
+
+/*--- Using flex to the button to center the content and change the background-color ----*/
+.btn {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 95%;
+	padding: 5px;
+	border-radius: 10px;
+	margin: 10px;
+	background-color: #57eeab;
+	border-style: none;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/*--- Using flex to agree lable to justify it start ----*/
+.agree {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: start;
+	margin-left: 40px;
+	font-size: 14px;
+}
+
+/*--- Using margin-left and margin-bottom to put the checkbox before I agree ---*/
+#checkbox {
+	margin-left: -130px;
+	margin-bottom: -15px
+}
+
+/*---Changing the font-size of Already applied ----*/
+.already {
+	font-size: 13px;
+}
+
+/*---Changing the color of the font of the cheak link----*/
+.cheak {
+	color: #ff8480;
+}
+
+/*---- Using display block to the footer and change the background-color-----*/
+footer {
+	display: block;
+	padding: 30px;
+	background-color: #fffd8c;
+}
+
+/*--- Using flex to the calculator-form to be flexable---*/
+.cal {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/*--- Using the width and margin-left to the hours in the form to style it---*/
+#hours {
+	width: 100px;
+	margin-left: 30px;
+}
+
+/*--- Using width to the city in the form to style it ---*/
+#city {
+	width: 200px;
+}
+
+/*--- Changing the background-color of the input calculater ---*/
+#calculater {
+	background-color: #ff8480;
+	color: white;
+	width: 150px;
+	font-size: 15px;
+	text-align: center;
+}
+
+/*--- Using display inline-block to the icons in the footer---*/
+.icons {
+	display: inline-block;
+	margin-left: 1200px;
+	margin-top: -50px;
+	margin-right: 60px;
+}
+
+/*--- Using flex to the icons to justify between them---*/
+.icons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+/*--- Using margin to the h4 in the footer---*/
+.see {
+	margin-left: 30px;
+}
+
+/*--- Using margin to the paragraph in the footer--*/
+.how {
+	margin-left: 30px;
+}
+/*--- Adding media queries to desktop max-width 1920px ---*/
+@media screen and (min-width:1920px){
+	.main{
+		margin-bottom: -190px;
+	}
+	footer{
+		margin-top: 196px;
+	}
+	.boss{
+		font-size: 90px;
+	}
+	.parag{
+		font-size: 25px;
+		margin-top: 17%;
+	}
+	.section{
+		margin-right: 160px;
+		width: 450px;
+		height: 550px;
+	}
+	.apply{
+		margin-left: 15px;
+		font-size: 30px;
+	}
+	.enter{
+		margin-left: 15px;
+	}
+	.already{
+		margin-left: 15px;
+	}
+	#checkbox{
+		margin-right: 260px;
+	}
+	.icons{
+		margin-right: 150px;
+	}
+	.already{
+		font-size: 16px;
+	}
+	#calculater{
+		font-size: 20px;
+	}
+	
+}
+
+
+/*--- Adding media queries to tablet max-width 768px---*/
+@media screen and (max-width:768px) {
+	.main {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		background-image: url(images/bg-image/scooter.svg);
+		background-position: center 40%;
+		background-size: 60%;
+		grid-template-areas: "header header header"
+			"main main main"
+			"aside aside aside";
+	}
+
+	.vehicle {
+		grid-area: header;
+		margin-left: 70px;
+	}
+
+	.section {
+		grid-area: aside;
+		justify-self: center;
+		width: 450px;
+		margin-top: -20%;
+		height: 110%;
+	}
+
+	.boss {
+		font-size: 80px;
+	}
+
+	.dlogo {
+		margin-left: 70px;
+	}
+
+	#icon {
+		margin-left: 200px;
+		margin-top: 10px;
+		margin-right: 200px;
+
+	}
+
+	.cal {
+		justify-content: center;
+	}
+
+	.calculator {
+		margin-left: 55px;
+	}
+
+	#checkbox {
+		margin-left: -170px;
+		margin-bottom: 5px;
+	}
+
+	.agree {
+		margin-left: -190px;
+		padding-top: 10px;
+	}
+
+}
+
+/*--- Adding media queries to the mobile max-width 375px ----*/
+@media screen and (max-width: 375px) {
+	.main {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		background-image: url(images/bg-image/scooter.svg);
+		background-position: center 40%;
+		background-size: 90%;
+		grid-template-areas: "header header header"
+			"main main main"
+			"aside aside aside";
+	}
+
+	.vehicle {
+		margin-left: 2%;
+	}
+
+	.parag {
+		margin-top: -20px;
+	}
+
+	.section {
+		grid-area: aside;
+		width: 300px;
+		margin-right: 70px;
+		margin-top: -300px;
+		height: fit-content;
+		margin-top: -280px;
+	}
+
+	.enter {
+		font-size: 15px;
+		margin-left: 20px;
+	}
+
+	.apply {
+		font-size: 50px;
+	}
+
+	.agree {
+		margin-left: 50px;
+	}
+
+	#checkbox {
+		margin-left: -100px;
+		margin-bottom: -20px;
+	}
+
+	.dlogo {
+		margin-left: 5%;
+	}
+
+	footer {
+		margin-top: -200px;
+
+	}
+
+	.calculator {
+		margin-left: -10px;
+	}
+
+	#hours {
+		margin-left: -8px;
+		width: 50px;
+	}
+
+	#city {
+		width: 130px;
+	}
+
+	#calculater {
+		width: 230px;
+	}
+
+	#icon {
+		margin-left: 50px;
+		margin-top: 10px;
+		margin-right: 50px;
+	}
+}
