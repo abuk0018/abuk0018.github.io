@@ -398,6 +398,14 @@ fieldset {
         position: relative;
         bottom: 100px;
     }
+    ul li a {
+        position: relative;
+        top: 50px;
+    }
+    .naste{
+        position: relative;
+        bottom: 100px;
+    }
 
     nav ul li {
         display: inline-block;
