@@ -1,11 +1,13 @@
 
 
 
-$(document).ready(function() {
-     $('.portfolio-item .text-popup-link').magnificPopup({type:'image'});
-     gallery:{enabled:true}
-    
-   });
+
+   $(document).ready(function() {
+     $('.portfolio-item .text-popup-link').magnificPopup({ 
+        type: 'image',
+        gallery:{enabled:true}
+     });
+  });
 
 $(function(){
      $('.categories a').click(function(e){

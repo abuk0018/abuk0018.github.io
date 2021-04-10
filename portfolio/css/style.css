@@ -174,7 +174,7 @@ body{
 .categories ul li a:active,
 .categories ul li a:hover{
     line-height:24px;
-    background:#fff;
+    background: #fff;
     color:#4E5961;
     text-decoration:none;
 }
