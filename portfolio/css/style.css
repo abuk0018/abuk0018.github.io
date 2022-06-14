@@ -15,7 +15,7 @@ html,body{
     --border-color:#201f1f17;
     --gradient-color:linear-gradient(90deg,#ffc107 0%,#555 100%);
     --shadow-color:0px 10px 30px rgba(238, 218, 103, 0.3);
-    --box-shadow:0px 10px 30px rgba(57,56.61.0.205);
+    --box-shadow:0px 10px 30px rgba(57, 56, 61, 0.205);
 
 
 /*--Font family variables--*/
@@ -28,7 +28,7 @@ html,body{
     src: url(../font/Roboto/Roboto-Regular.ttf);
 }
 
-/*-- Start navigation --*/
+/*-- Start navigation area for all pages --*/
 
 .header-area .main-menu .nav-item .nav-link{
     font-family: var(--roboto);
@@ -43,13 +43,14 @@ html,body{
        background: var(--gradient-color);
 }
 
-/*-- End navigation --*/
+/*-- End styling navigation area for all pages --*/
 
-/*-- Start Banner Area --*/
+/*-- Start styling Banner Area for the home page--*/
 .site-main .site-banner .site-title h3{
    padding-top: 35% ;
    font-weight: 500;
 }
+
 .site-main .site-banner .site-title h3::after{
     content:"" ;
     height: 2px;
@@ -66,7 +67,6 @@ html,body{
     font-size: 1.5rem;
 }
 .site-main .site-banner .banner-image{
-  box-shadow: var(--box-shadow);
   display: flex;
   justify-content: center;
      
@@ -80,6 +80,7 @@ html,body{
     position: relative;
     border: 3px solid transparent;
     border-radius: 4px;
+    
 }
 .button.warning-button{
     background: var(--gradient-color);
@@ -112,28 +113,87 @@ html,body{
     color: whitesmoke;
     box-shadow: var(--box-shadow);
 }
-/*-- End Banner Area --*/
-/*-- Start Footer Area --*/
+/*-- End styling Banner Area for the home page --*/
+
+/*--- Start styling animation for Badrieh photo on the home page--*/
+  
+  .wave {
+    float: left;
+    margin: 100px;
+    animation: wave  ease-in-out 0.5s infinite alternate;
+    transform-origin: center -20px;
+  }
+  
+  .wave:hover {
+    animation-play-state: paused;
+  }
+  
+  .wave img {
+    border: 5px solid ;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .wave figcaption {
+    text-align: center;
+  }
+  
+  .wave:after{
+    content: '';
+    position: absolute;
+    width: 20px; 
+    height: 20px;
+    border: 1.5px solid #ffffff;
+    top: -10px; 
+    left: 50%;
+    z-index: 0;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(45deg);
+  }
+         
+  .wave:before{
+    content: '';
+    position: absolute;
+    top: -23px;
+    left: 50%;
+    display: block;
+    height: 44px;
+    width: 47px;
+    background-image: url(https://cdn.hashnode.com/res/hashnode/image/upload/v1602040503586/FW6g79WBY.png);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    z-index: 16;
+  }
+          
+  @keyframes wave {
+    0% { transform: rotate(3deg); }
+    100% { transform: rotate(-3deg); }
+  }
+  /*--- End styling animation for Badrieh photo on the home page ---*/
+
+/*-- Start styling Footer Area for all pages --*/
 .list-inline-item :active{
     background: var(--gradient-color); 
 }
 .list-inline-item:hover{
     background: var(--gradient-color);
 }
-/*-- End Footer Area --*/
+/*-- End styling Footer Area for all pages --*/
 
 
-/*-- Start Skills Area --*/
+/*-- Start styling Skills Area for portfolio page--*/
 .card-img-top:hover{
     box-shadow: var(--box-shadow);
     transform: scale(1.1);
     filter: brightness(0.50);
     padding: 30px;
 }
-/*-- End Skills Area --*/
+/*-- End styling Skills Area for portfolio page --*/
 
 
-/*-- Start Gallary Area --*/
+/*-- Start styling Gallary Area for portfolio page --*/
 
                         
 body{
@@ -174,7 +234,7 @@ body{
 .categories ul li a:active,
 .categories ul li a:hover{
     line-height:24px;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.959);
     color:#4E5961;
     text-decoration:none;
 }
@@ -362,9 +422,9 @@ body{
     color:var(--gradient-color);
 }
 
-/*-- End Gallary Area --*/  
+/*-- End styling Gallary Area for portfolio page --*/  
   
-/*-- Start contact area --*/
+/*-- Start styling contact area for contact page --*/
 
 body{
     background-color: #DCDCDC;
@@ -390,9 +450,13 @@ body{
 }
 .btn{
     background: var(--gradient-color);
+    margin-bottom: 25px;
+}
+.btn:hover{
+    background: var(--box-shadow);
 }
 
-/*-- End contact area --*/
+/*-- End styling contact area for contact page --*/
 
   
 
